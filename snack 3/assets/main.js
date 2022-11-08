@@ -11,20 +11,11 @@ let array = [
   { nome: 'Atala', peso: 10 },
 ];
 
-//var pesoMin = Math.min(...array.map(({ nome, peso }) => peso));
+let pesoMin = Math.min(...array.map(({ nome, peso }) => peso));
 
-var pesoMin = array.map(({ nome, peso }) => {
-    return nome * Math.min(peso)
-});
 
 document.getElementById('result').innerHTML = 'il peso (kg) minimo delle biciclette è di: ' + pesoMin;
 
-// VARIE PROVE
 
-// let array2 = array.filter(({nome, peso}) => {
-//     //console.log(peso);
-//     return Math.min((peso));
-// })
 
-//  console.log(array2)
  
