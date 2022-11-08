@@ -6,6 +6,7 @@
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const foreachNewArray = [];
+
 let nMin = parseInt(prompt('scrivi un numero min da 1 a 5'));
 let nMax = parseInt(prompt('scrivi un numero max da 1 a 5'));
 

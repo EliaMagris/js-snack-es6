@@ -24,7 +24,7 @@ let students = [
 ];
 
 const arr2 = students.map((element) => {
-  return element.name.slice(0).toUpperCase();
+  return element.name.toUpperCase();
 });
 
 console.log(arr2);
@@ -46,3 +46,7 @@ const superStrongStudent = students.filter((element) => {
 console.log(superStrongStudent);
 
 // POINT 3 COMPLETED
+
+students.forEach((element) => {
+  console.log(element.name.slice(0).toUpperCase());
+});
