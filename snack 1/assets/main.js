@@ -5,20 +5,20 @@
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
-const foreachNewArray =[]
-let nMin = 2;
-let nMax = 5;
+const foreachNewArray = [];
+let nMin = parseInt(prompt('scrivi un numero min da 1 a 5'));
+let nMax = parseInt(prompt('scrivi un numero max da 1 a 5'));
 
 // PRIMO METODO CON FOREACH
 
 myArray.forEach((element, index) => {
   if (index >= nMin && index <= nMax) {
-    foreachNewArray.push(element)
+    foreachNewArray.push(element);
     return true;
   }
 });
 
-console.log(foreachNewArray)
+console.log(foreachNewArray);
 
 // SECODNO METODO CON FILTER
 
@@ -27,6 +27,5 @@ let newArray = myArray.filter((element, index) => {
     return true;
   }
 });
-
 
 console.log(newArray);
