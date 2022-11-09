@@ -13,21 +13,20 @@ let array = [
   { nome: 'Roma', puntiFatti: 0, falliSubiti: 0 },
 ];
 
+function randomNumber(min, max){
+  return Math.floor(Math.random(min) * max)
+}
+
 array.forEach((element) => {
-  let randomPoint = Math.floor(Math.random(0) * 100);
+   element.puntiFatti = randomNumber(0, 100);
 
-  let randomFall = Math.floor(Math.random(0) * 50);
-
-  element.puntiFatti = randomPoint;
-  element.falliSubiti = randomFall
+   element.falliSubiti = randomNumber(0, 50);
 });
 
 console.log(array);
 
-let newArray = array.map (({nome, falliSubiti}) => {
-    return {nome, falliSubiti}
-})
+let newArray = array.map(({ nome, falliSubiti }) => {
+  return { nome, falliSubiti };
+});
 
-console.log(newArray)
-
-
+console.log(newArray);
