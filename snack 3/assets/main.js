@@ -11,11 +11,23 @@ let array = [
   { nome: 'Atala', peso: 10 },
 ];
 
-let pesoMin = Math.min(...array.map(({ nome, peso }) => peso));
+let biciLeggera = array[0];
 
+for (let i = 0; i < array.length; i++) {
+  
+  let element = array[i];
+  
+  let { peso } = element;
+  
+  if (peso < biciLeggera.peso) {
+    biciLeggera = element;
+  }
+}
 
-document.getElementById('result').innerHTML = 'il peso (kg) minimo delle biciclette è di: ' + pesoMin;
+console.log(biciLeggera);
 
+// SECONDO METODO
 
+// let pesoMin = Math.min(...array.map(({ nome, peso }) => peso));
 
- 
+// document.getElementById('result').innerHTML = 'il peso (kg) minimo delle biciclette è di: ' + pesoMin;
